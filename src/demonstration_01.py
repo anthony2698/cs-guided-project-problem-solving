@@ -17,4 +17,14 @@ Notes:
 
 def last(a, n):
     # Your code here
+    # Using slicing syntax, we can retrieve the desired elements from the end of the list.
+    # If n is > length of list return "invalid"
+    # If we get n as 0 return an empty list
+    if len(a) < n:
+        return "invalid"
+    elif n == 0:
+        return []
+    return a[len(a) - n : len(a)]
+
+print(last([4, 3, 9, 9, 7, 6], 7))
 
