@@ -15,5 +15,16 @@ Examples:
 """
 def get_middle(input_str):
     # Your code here
+    # if string is even, return middle 2 chars
+    # elif string is odd, return middle char
+    if len(input_str) % 2 == 0:
+        return(input_str[(len(input_str) // 2) - 1 : 1 + (len(input_str) // 2)])
+    else:
+        return(input_str[len(input_str) // 2])
+
+print(get_middle("test"))
+print(get_middle("testing"))
+print(get_middle("middle"))
+print(get_middle("A"))
 
 
