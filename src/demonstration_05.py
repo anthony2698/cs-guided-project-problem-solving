@@ -23,4 +23,6 @@ Notes:
 """
 def data_type(value):
     # Your code here
+    return type(value)
 
+print(data_type({'key': "value"}))
